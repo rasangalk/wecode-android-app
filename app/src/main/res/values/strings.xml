@@ -26,6 +26,14 @@
     <string name="r_et_signup_rePw">re-enter the password</string>
     <string name="r_btn_signup_createAcc">Create Account</string>
     <string name="r_tv_signup_alrdyHvAcc">Have an account? Login</string>
+    <string name="r_tv_loginTitle">Sign in</string>
+    <string name="r_et_login_email2">Email Address</string>
+    <string name="r_et_login_pw">Password</string>
+    <string name="r_btn_login_login">LOGIN</string>
+    <string name="r_tv_login_forgotPw">Forgot Password?</string>
+    <string name="r_tv_login_DntHvAcc">Don\'t have an account?</string>
+    <string name="r_tv_login_reg">Register!</string>
+    <string name="r_login_logo">logo</string>
     <string-array name="location_spinner">
         <item>Select a location</item>
         <item>Ampara</item>
