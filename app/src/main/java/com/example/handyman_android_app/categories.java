@@ -24,6 +24,7 @@ public class categories extends Fragment {
     private String mParam1;
     private String mParam2;
 
+
     public categories() {
         // Required empty public constructor
     }
