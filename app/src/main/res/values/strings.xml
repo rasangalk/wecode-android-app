@@ -42,6 +42,13 @@
     <string name="p_et_makeResponse_description">Enter a good description</string>
     <string name="p_btn_makeResponse_btn">Make Response</string>
     <string name="p_tv_makeResponse_topic">Make Response</string>
+    <string name="p_tv_viewRequest_topic">View Request</string>
+    <string name="p_tv_viewRequest_name">Customer Name</string>
+    <string name="p_tv_viewRequest_category">Category</string>
+    <string name="p_tv_viewRequest_title">Title</string>
+    <string name="p_tv_viewRequest_description">Description</string>
+    <string name="p_tv_viewRequest_location">Location</string>
+    <string name="p_btn_viewRequest_btn">RESPONSE</string>
     <string-array name="location_spinner">
         <item>Select a location</item>
         <item>Ampara</item>
