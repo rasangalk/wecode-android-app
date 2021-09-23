@@ -34,7 +34,51 @@
     <string name="r_tv_login_DntHvAcc">Don\'t have an account?</string>
     <string name="r_tv_login_reg">Register!</string>
     <string name="r_login_logo">logo</string>
+    <string name="p_tv_makeResponse_category">Category</string>
+    <string name="p_tv_makeResponse_title">Title</string>
+    <string name="p_tv_makeResponse_description">Description</string>
+    <string name="p_tv_makeResponse_location">Location</string>
+    <string name="p_et_makeResponse_title">Enter a title</string>
+    <string name="p_et_makeResponse_description">Enter a good description</string>
+    <string name="p_btn_makeResponse_btn">Make Response</string>
+    <string name="p_tv_makeResponse_topic">Make Response</string>
     <string-array name="location_spinner">
+        <item>Select a location</item>
+        <item>Ampara</item>
+        <item>Anuradhapura</item>
+        <item>Badulla	</item>
+        <item>Batticaloa</item>
+        <item>Colombo</item>
+        <item>Galle	</item>
+        <item>Gampaha</item>
+        <item>Hambantota</item>
+        <item>Jaffna</item>
+        <item>Kalutara</item>
+        <item>Kandy</item>
+        <item>Kegalle	</item>
+        <item>Kilinochchi</item>
+        <item>Kurunegala</item>
+        <item>Mannar</item>
+        <item>Matale</item>
+        <item>Matara</item>
+        <item>Moneragala</item>
+        <item>Mullaitivu</item>
+        <item>Nuwara Eliya</item>
+        <item>Polonnaruwa</item>
+        <item>Puttalam</item>
+        <item>Ratnapura</item>
+        <item>Trincomalee</item>
+        <item>Vavuniya</item>
+    </string-array>
+    <string-array name="p_makeResponse_category">
+        <item>Mason</item>
+        <item>Carpenter</item>
+        <item>Electrician</item>
+        <item>Cleaner</item>
+        <item>Contractor</item>
+        <item>Painter</item>
+    </string-array>
+    <string-array name="p_makeResponse_location">
         <item>Select a location</item>
         <item>Ampara</item>
         <item>Anuradhapura</item>
