@@ -34,6 +34,8 @@
     <string name="r_tv_login_DntHvAcc">Don\'t have an account?</string>
     <string name="r_tv_login_reg">Register!</string>
     <string name="r_login_logo">logo</string>
+    <string name="r_spin_signup_role">Role</string>
+    <string name="r_tv_signup_role">Role</string>
     <string-array name="location_spinner">
         <item>Select a location</item>
         <item>Ampara</item>
@@ -61,5 +63,9 @@
         <item>Ratnapura</item>
         <item>Trincomalee</item>
         <item>Vavuniya</item>
+    </string-array>
+    <string-array name="Role_spinner">
+        <item>I want to hire</item>
+        <item>I want to work</item>
     </string-array>
 </resources>

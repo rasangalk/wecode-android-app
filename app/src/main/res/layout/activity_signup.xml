@@ -154,7 +154,7 @@
                     android:background="@drawable/field_gray"
                     android:ems="10"
                     android:hint="@string/r_et_signup_email"
-                    android:inputType="textPersonName"
+                    android:inputType="textEmailAddress"
                     android:paddingLeft="10dp"
                     android:importantForAutofill="no" />
 
@@ -209,6 +209,31 @@
                     android:layout_marginLeft="16dp"
                     android:background="@drawable/rectt"
                     android:entries="@array/location_spinner"/>
+
+                <TextView
+                    android:id="@+id/r_tv_signup_role"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/r_tv_signup_role"
+                    android:textColor="@color/Orange"
+                    android:textSize="27sp" />
+
+                <Spinner
+                    android:id="@+id/r_spin_signup_role"
+                    android:layout_width="267dp"
+                    android:layout_height="37dp"
+                    android:layout_margin="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:background="@drawable/rectt"
+                    android:entries="@array/Role_spinner" />
+
+
 
                 <TextView
                     android:id="@+id/r_tv_signup_pw"
@@ -278,10 +303,8 @@
                     android:layout_marginBottom="5dp"
                     android:background="@drawable/fields"
                     android:fontFamily="sans-serif-black"
-                    android:onClick="oneclick"
                     android:text="@string/r_btn_signup_createAcc"
-                    app:backgroundTint="@color/Orange"
-                    tools:ignore="OnClick" />
+                    app:backgroundTint="@color/Orange" />
 
                 <TextView
                     android:id="@+id/r_tv_signup_alrdyHvAcc"
