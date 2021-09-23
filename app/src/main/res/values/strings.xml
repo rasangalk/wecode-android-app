@@ -49,6 +49,14 @@
     <string name="p_tv_viewRequest_description">Description</string>
     <string name="p_tv_viewRequest_location">Location</string>
     <string name="p_btn_viewRequest_btn">RESPONSE</string>
+    <string name="p_tv_viewResponse_topic">Response</string>
+    <string name="p_tv_viewResponse_name">Customer Name</string>
+    <string name="p_tv_viewResponse_category">Category</string>
+    <string name="p_tv_viewResponse_title">Title</string>
+    <string name="p_tv_viewResponse_description">Description</string>
+    <string name="p_tv_viewResponse_location">Location</string>
+    <string name="p_btn_viewResponse_updateBtn">UPDATE</string>
+    <string name="p_btn_viewResponse_deleteBtn">DELETE</string>
     <string-array name="location_spinner">
         <item>Select a location</item>
         <item>Ampara</item>
