@@ -57,6 +57,12 @@
     <string name="p_tv_viewResponse_location">Location</string>
     <string name="p_btn_viewResponse_updateBtn">UPDATE</string>
     <string name="p_btn_viewResponse_deleteBtn">DELETE</string>
+    <string name="p_tv_editResponse_topic">Edit Response</string>
+    <string name="p_tv_editResponse_category">Category</string>
+    <string name="p_tv_editResponse_title">Title</string>
+    <string name="p_tv_editResponse_description">Description</string>
+    <string name="p_tv_editResponse_location">Location</string>
+    <string name="p_btn_editResponse_btn">UPDATE RESPONSE</string>
     <string-array name="location_spinner">
         <item>Select a location</item>
         <item>Ampara</item>
@@ -94,6 +100,42 @@
         <item>Painter</item>
     </string-array>
     <string-array name="p_makeResponse_location">
+        <item>Select a location</item>
+        <item>Ampara</item>
+        <item>Anuradhapura</item>
+        <item>Badulla	</item>
+        <item>Batticaloa</item>
+        <item>Colombo</item>
+        <item>Galle	</item>
+        <item>Gampaha</item>
+        <item>Hambantota</item>
+        <item>Jaffna</item>
+        <item>Kalutara</item>
+        <item>Kandy</item>
+        <item>Kegalle	</item>
+        <item>Kilinochchi</item>
+        <item>Kurunegala</item>
+        <item>Mannar</item>
+        <item>Matale</item>
+        <item>Matara</item>
+        <item>Moneragala</item>
+        <item>Mullaitivu</item>
+        <item>Nuwara Eliya</item>
+        <item>Polonnaruwa</item>
+        <item>Puttalam</item>
+        <item>Ratnapura</item>
+        <item>Trincomalee</item>
+        <item>Vavuniya</item>
+    </string-array>
+    <string-array name="p_editResponse_category">
+        <item>Mason</item>
+        <item>Carpenter</item>
+        <item>Electrician</item>
+        <item>Cleaner</item>
+        <item>Contractor</item>
+        <item>Painter</item>
+    </string-array>
+    <string-array name="p_editResponse_location">
         <item>Select a location</item>
         <item>Ampara</item>
         <item>Anuradhapura</item>
