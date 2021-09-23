@@ -49,6 +49,10 @@
     <string name="r_tv_login_DntHvAcc">Don\'t have an account?</string>
     <string name="r_tv_login_reg">Register!</string>
     <string name="r_login_logo">logo</string>
+
+    <string name="r_spin_signup_role">Role</string>
+    <string name="r_tv_signup_role">Role</string>
+
     <string name="p_tv_makeResponse_category">Category</string>
     <string name="p_tv_makeResponse_title">Title</string>
     <string name="p_tv_makeResponse_description">Description</string>
@@ -78,6 +82,7 @@
     <string name="p_tv_editResponse_description">Description</string>
     <string name="p_tv_editResponse_location">Location</string>
     <string name="p_btn_editResponse_btn">UPDATE RESPONSE</string>
+
     <string-array name="location_spinner">
         <item>Select a location</item>
         <item>Ampara</item>
@@ -106,6 +111,12 @@
         <item>Trincomalee</item>
         <item>Vavuniya</item>
     </string-array>
+
+    <string-array name="Role_spinner">
+        <item>I want to hire</item>
+        <item>I want to work</item>
+    </string-array>
+
     <string-array name="p_makeResponse_category">
         <item>Mason</item>
         <item>Carpenter</item>
@@ -178,5 +189,4 @@
         <item>Trincomalee</item>
         <item>Vavuniya</item>
     </string-array>
-
 </resources>
