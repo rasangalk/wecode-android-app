@@ -10,14 +10,29 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Handymanandroidapp">
 
+        <activity android:name=".TechnicialHome"></activity>
+
+
+        <activity android:name=".n_view_request_service"></activity>
+        <!-- <activity android:name=".n_view_gig"/> -->
+        <activity android:name=".n_request_services" />
+        <activity android:name=".p_edit_response" />
+
 
         <activity android:name=".GigsActivity"></activity>
-        <!-- <activity android:name=".loginActivity"></activity> -->
 
-        <activity android:name=".p_edit_response"></activity>
+        <!-- <activity android:name=".loginActivity"></activity> -->
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".p_edit_response" />
         <activity android:name=".p_view_response" />
         <activity android:name=".p_view_request" />
+
+        <activity android:name=".p_make_response" /> <!-- <activity android:name=".loginActivity" /> -->
+        <activity android:name=".CreateGig" />
+        <activity android:name=".GigsActivity" /> <!-- <activity android:name=".loginActivity"></activity> -->
+
 <!--        <activity android:name=".p_make_response" />-->
+
 
 
 
@@ -29,8 +44,16 @@
 
 
 
-            android:name=".loginActivity"
 
+        <activity android:name=".signupActivity" />
+        <activity
+
+            android:name=".n_view_gig"
+
+            android:name=".p_make_response"
+
+
+            android:name=".loginActivity"
             android:label="@string/app_name"
             android:theme="@style/Theme.Handymanandroidapp.NoActionBar">
             <intent-filter>

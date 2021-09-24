@@ -84,6 +84,27 @@
     <string name="p_btn_editResponse_btn">UPDATE RESPONSE</string>
 
 
+    <string name="n_btn_request_service">Request Service</string>
+    <string name="n_request_services_title">Request Services</string>
+    <string name="n_request_services_description">Description</string>
+    <string name="n_request_services_location">Location</string>
+    <string name="n_request_services_description_hint">I need to construct a wall urgently</string>
+    <string name="n_request_services_date_hint">2020/10/10</string>
+    <string name="n_request_service_scheduled_date">Scheduled Date</string>
+    <string name="n_view_gig_title">View Gig</string>
+    <string name="n_view_gig_category">Category</string>
+    <string name="n_view_gig_gig_title">Title</string>
+    <string name="n_view_gig_title_fill">Experienced carpenter</string>
+    <string name="n_view_gig_phone_no">Phone no.</string>
+    <string name="n_view_gig_phone_fill">071345647</string>
+    <string name="n_view_gig_location">Location</string>
+    <string name="n_view_gig_location_fill">Colombo</string>
+    <string name="n_view_gig_email">Email</string>
+    <string name="n_view_gig_email_fill">nimal@gmail.com</string>
+    <string name="n_view_gig_description">Description</string>
+    <string name="n_view_gig_description_fill">This is the description</string>
+
+
     <string name="r_tv_createGigTitle">Create New Gig</string>
     <string name="r_tv_createGig_title">Title</string>
     <string name="r_et_crateGig_title">I do ....</string>
@@ -91,6 +112,11 @@
     <string name="r_tv_crateGig_description">Description</string>
     <string name="r_et_crateGig_description">Enter a description not more than 100 characters</string>
     <string name="r_btn_createGig_create">Create Gig</string>
+
+
+    <string name="r_tv_activeGigsTitle">Active Gigs</string>
+    <string name="r_btn_activeGigs_createNew">CREATE NEW</string>
+
 
     <string-array name="location_spinner">
         <item>Select a location</item>
@@ -175,6 +201,52 @@
         <item>Select a location</item>
         <item>Ampara</item>
         <item>Anuradhapura</item>
+        <item>Badulla</item>
+        <item>Batticaloa</item>
+        <item>Colombo</item>
+        <item>Galle</item>
+        <item>Gampaha</item>
+        <item>Hambantota</item>
+        <item>Jaffna</item>
+        <item>Kalutara</item>
+        <item>Kandy</item>
+        <item>Kegalle</item>
+        <item>Kilinochchi</item>
+        <item>Kurunegala</item>
+        <item>Mannar</item>
+        <item>Matale</item>
+        <item>Matara</item>
+        <item>Moneragala</item>
+        <item>Mullaitivu</item>
+        <item>Nuwara Eliya</item>
+        <item>Polonnaruwa</item>
+        <item>Puttalam</item>
+        <item>Ratnapura</item>
+        <item>Trincomalee</item>
+        <item>Vavuniya</item>
+
+    </string-array>
+
+
+    </string-array>
+
+
+    <string-array name="Gig_category">
+        <item>Plumber</item>
+        <item>Carpenter</item>
+        <item>Mason</item>
+        <item>Painter</item>
+        <item>Welding</item>
+        <item>Cleaners</item>
+        <item>Electricians</item>
+
+
+
+
+    <string-array name="n_request_services_location">
+        <item>Select a location</item>
+        <item>Ampara</item>
+        <item>Anuradhapura</item>
         <item>Badulla	</item>
         <item>Batticaloa</item>
         <item>Colombo</item>
@@ -199,16 +271,11 @@
         <item>Trincomalee</item>
         <item>Vavuniya</item>
     </string-array>
-    <string-array name="Gig_category">
-        <item>Plumber</item>
-        <item>Carpenter</item>
-        <item>Mason</item>
-        <item>Painter</item>
-        <item>Welding</item>
-        <item>Cleaners</item>
-        <item>Electricians</item>
+
+
 
     </string-array>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>
