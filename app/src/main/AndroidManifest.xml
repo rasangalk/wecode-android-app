@@ -9,21 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Handymanandroidapp">
-<<<<<<< Updated upstream
-
-        <activity android:name=".GigsActivity"></activity>
+        <activity android:name=".TechnicialHome"></activity>
         <!-- <activity android:name=".loginActivity"></activity> -->
-
-        <activity android:name=".p_edit_response"></activity>
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".p_edit_response" />
         <activity android:name=".p_view_response" />
         <activity android:name=".p_view_request" />
-        <activity android:name=".p_make_response" />
-        <activity android:name=".loginActivity" />
-
-=======
-        <activity android:name=".CreateGig"></activity>
+        <activity android:name=".p_make_response" /> <!-- <activity android:name=".loginActivity" /> -->
+        <activity android:name=".CreateGig" />
         <activity android:name=".GigsActivity" /> <!-- <activity android:name=".loginActivity"></activity> -->
->>>>>>> Stashed changes
         <activity android:name=".signupActivity" />
         <activity
             android:name=".loginActivity"

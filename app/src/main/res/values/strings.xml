@@ -52,7 +52,6 @@
 
     <string name="r_spin_signup_role">Role</string>
     <string name="r_tv_signup_role">Role</string>
-<<<<<<< Updated upstream
 
     <string name="p_tv_makeResponse_category">Category</string>
     <string name="p_tv_makeResponse_title">Title</string>
@@ -84,7 +83,6 @@
     <string name="p_tv_editResponse_location">Location</string>
     <string name="p_btn_editResponse_btn">UPDATE RESPONSE</string>
 
-=======
     <string name="r_tv_createGigTitle">Create New Gig</string>
     <string name="r_tv_createGig_title">Title</string>
     <string name="r_et_crateGig_title">I do ....</string>
@@ -92,7 +90,9 @@
     <string name="r_tv_crateGig_description">Description</string>
     <string name="r_et_crateGig_description">Enter a description not more than 100 characters</string>
     <string name="r_btn_createGig_create">Create Gig</string>
->>>>>>> Stashed changes
+    <string name="r_tv_activeGigsTitle">Active Gigs</string>
+    <string name="r_btn_activeGigs_createNew">CREATE NEW</string>
+
     <string-array name="location_spinner">
         <item>Select a location</item>
         <item>Ampara</item>
@@ -126,7 +126,6 @@
         <item>I want to hire</item>
         <item>I want to work</item>
     </string-array>
-<<<<<<< Updated upstream
 
     <string-array name="p_makeResponse_category">
         <item>Mason</item>
@@ -176,16 +175,16 @@
         <item>Select a location</item>
         <item>Ampara</item>
         <item>Anuradhapura</item>
-        <item>Badulla	</item>
+        <item>Badulla</item>
         <item>Batticaloa</item>
         <item>Colombo</item>
-        <item>Galle	</item>
+        <item>Galle</item>
         <item>Gampaha</item>
         <item>Hambantota</item>
         <item>Jaffna</item>
         <item>Kalutara</item>
         <item>Kandy</item>
-        <item>Kegalle	</item>
+        <item>Kegalle</item>
         <item>Kilinochchi</item>
         <item>Kurunegala</item>
         <item>Mannar</item>
@@ -199,7 +198,7 @@
         <item>Ratnapura</item>
         <item>Trincomalee</item>
         <item>Vavuniya</item>
-=======
+    </string-array>
     <string-array name="Gig_category">
         <item>Plumber</item>
         <item>Carpenter</item>
@@ -209,6 +208,5 @@
         <item>Cleaners</item>
         <item>Electricians</item>
 
->>>>>>> Stashed changes
     </string-array>
 </resources>
