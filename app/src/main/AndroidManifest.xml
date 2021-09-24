@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Handymanandroidapp">
-<!--        <activity android:name=".RequestServicesActivity"></activity>-->
+        <activity android:name=".n_view_request_service"></activity>
+        <!-- <activity android:name=".n_view_gig"/> -->
+        <activity android:name=".n_request_services" />
         <activity android:name=".p_edit_response" />
         <activity android:name=".p_view_response" />
         <activity android:name=".p_view_request" />
@@ -17,7 +19,7 @@
         <activity android:name=".loginActivity" />
         <activity android:name=".signupActivity" />
         <activity
-            android:name=".RequestServicesActivity"
+            android:name=".n_view_gig"
             android:label="@string/app_name"
             android:theme="@style/Theme.Handymanandroidapp.NoActionBar">
             <intent-filter>

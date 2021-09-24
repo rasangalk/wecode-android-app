@@ -9,7 +9,7 @@ import android.widget.AdapterView;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-public class RequestServicesActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
+public class n_request_services extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

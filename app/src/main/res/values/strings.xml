@@ -85,6 +85,18 @@
     <string name="n_request_services_description_hint">I need to construct a wall urgently</string>
     <string name="n_request_services_date_hint">2020/10/10</string>
     <string name="n_request_service_scheduled_date">Scheduled Date</string>
+    <string name="n_view_gig_title">View Gig</string>
+    <string name="n_view_gig_category">Category</string>
+    <string name="n_view_gig_gig_title">Title</string>
+    <string name="n_view_gig_title_fill">Experienced carpenter</string>
+    <string name="n_view_gig_phone_no">Phone no.</string>
+    <string name="n_view_gig_phone_fill">071345647</string>
+    <string name="n_view_gig_location">Location</string>
+    <string name="n_view_gig_location_fill">Colombo</string>
+    <string name="n_view_gig_email">Email</string>
+    <string name="n_view_gig_email_fill">nimal@gmail.com</string>
+    <string name="n_view_gig_description">Description</string>
+    <string name="n_view_gig_description_fill">This is the description</string>
     <string-array name="location_spinner">
         <item>Select a location</item>
         <item>Ampara</item>
