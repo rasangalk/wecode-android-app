@@ -12,7 +12,6 @@
     <string name="menu_slideshow">Slideshow</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="menu_categories">Categories</string>
     <string name="n_categories_title">Categories</string>
     <string name="n_category_image_desc">category_image</string>
@@ -53,6 +52,7 @@
     <string name="r_spin_signup_role">Role</string>
     <string name="r_tv_signup_role">Role</string>
 
+
     <string name="p_tv_makeResponse_category">Category</string>
     <string name="p_tv_makeResponse_title">Title</string>
     <string name="p_tv_makeResponse_description">Description</string>
@@ -83,6 +83,7 @@
     <string name="p_tv_editResponse_location">Location</string>
     <string name="p_btn_editResponse_btn">UPDATE RESPONSE</string>
 
+
     <string name="n_btn_request_service">Request Service</string>
     <string name="n_request_services_title">Request Services</string>
     <string name="n_request_services_description">Description</string>
@@ -103,6 +104,7 @@
     <string name="n_view_gig_description">Description</string>
     <string name="n_view_gig_description_fill">This is the description</string>
 
+
     <string name="r_tv_createGigTitle">Create New Gig</string>
     <string name="r_tv_createGig_title">Title</string>
     <string name="r_et_crateGig_title">I do ....</string>
@@ -111,8 +113,10 @@
     <string name="r_et_crateGig_description">Enter a description not more than 100 characters</string>
     <string name="r_btn_createGig_create">Create Gig</string>
 
+
     <string name="r_tv_activeGigsTitle">Active Gigs</string>
     <string name="r_btn_activeGigs_createNew">CREATE NEW</string>
+
 
     <string-array name="location_spinner">
         <item>Select a location</item>
@@ -147,6 +151,7 @@
         <item>I want to hire</item>
         <item>I want to work</item>
     </string-array>
+
 
     <string-array name="p_makeResponse_category">
         <item>Mason</item>
@@ -222,6 +227,10 @@
 
     </string-array>
 
+
+    </string-array>
+
+
     <string-array name="Gig_category">
         <item>Plumber</item>
         <item>Carpenter</item>
@@ -230,6 +239,7 @@
         <item>Welding</item>
         <item>Cleaners</item>
         <item>Electricians</item>
+
 
 
 
@@ -261,6 +271,7 @@
         <item>Trincomalee</item>
         <item>Vavuniya</item>
     </string-array>
+
 
 
     </string-array>
