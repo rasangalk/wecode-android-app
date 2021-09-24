@@ -24,8 +24,15 @@
         tools:layout="@layout/fragment_slideshow" />
 
     <fragment
+
+        android:id="@+id/nav_buyerRequsts"
+        android:name="com.example.handyman_android_app.p_buyer_requests"
+        android:label="Buyer Requests"
+        tools:layout="@layout/fragment_p_buyer_requests" />
+
         android:id="@+id/nav_category"
         android:name="com.example.handyman_android_app.categories"
         android:label="Categories"
         tools:layout="@layout/n_fragment_categories"/>
+
 </navigation>
