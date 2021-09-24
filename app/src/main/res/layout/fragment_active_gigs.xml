@@ -5,7 +5,7 @@
     android:id="@+id/r_nav_activeGigs"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.home.HomeFragment"
+    tools:context=".ActiveGigs"
     android:background="@color/blue">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -33,7 +33,6 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
-            android:onClick="handleCreate"
             android:layout_marginTop="130dp"
             android:background="@drawable/fields"
             android:fontFamily="sans-serif-black"

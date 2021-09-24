@@ -1,12 +1,12 @@
 package com.example.handyman_android_app;
 
+import android.app.FragmentTransaction;
 import android.os.Bundle;
-import android.view.View;
 import android.view.Menu;
 
-import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 
+import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -20,6 +20,8 @@ public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityMainBinding binding;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,9 +38,13 @@ public class MainActivity extends AppCompatActivity {
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
 
+                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow, R.id.nav_category, R.id.r_nav_activeGigs)
+
+
                 R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow, R.id.nav_buyerRequsts)
 
                 R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow, R.id.nav_category)
+
 
                 .setDrawerLayout(drawer)
                 .build();

@@ -35,4 +35,9 @@
         android:label="Categories"
         tools:layout="@layout/n_fragment_categories"/>
 
+    <fragment
+        android:id="@+id/r_nav_activeGigs"
+        android:name="com.example.handyman_android_app.ActiveGigs"
+        android:label="ActiveGigs"
+        tools:layout="@layout/fragment_active_gigs"/>
 </navigation>

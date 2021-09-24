@@ -28,5 +28,10 @@
             android:icon="@drawable/ic_menu_slideshow"
             android:title="@string/menu_categories" />
 
+
+        <item
+            android:id="@+id/r_nav_activeGigs"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Active Gigs" />
     </group>
 </menu>
