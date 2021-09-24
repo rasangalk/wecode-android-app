@@ -10,6 +10,21 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menu_categories">Categories</string>
+    <string name="n_categories_title">Categories</string>
+    <string name="n_category_image_desc">category_image</string>
+    <string name="n_category_plumber">Plumber</string>
+    <string name="n_category_masons">Masons</string>
+    <string name="n_category_painter">Painter</string>
+    <string name="n_category_welding">Welding</string>
+    <string name="n_category_carpenters">Carpenters</string>
+    <string name="n_category_electricians">Electricians</string>
+    <string name="n_category_cleaners">Cleaners</string>
+    <string name="n_category_carpenter">Carpenter</string>
+
     <string name="r_tv_signupTitle">Sign up</string>
     <string name="r_tv_signup_firstName">First Name</string>
     <string name="r_tv_signup_lastName">Last Name</string>
@@ -34,6 +49,11 @@
     <string name="r_tv_login_DntHvAcc">Don\'t have an account?</string>
     <string name="r_tv_login_reg">Register!</string>
     <string name="r_login_logo">logo</string>
+
+    <string name="r_spin_signup_role">Role</string>
+    <string name="r_tv_signup_role">Role</string>
+<<<<<<< Updated upstream
+
     <string name="p_tv_makeResponse_category">Category</string>
     <string name="p_tv_makeResponse_title">Title</string>
     <string name="p_tv_makeResponse_description">Description</string>
@@ -63,6 +83,16 @@
     <string name="p_tv_editResponse_description">Description</string>
     <string name="p_tv_editResponse_location">Location</string>
     <string name="p_btn_editResponse_btn">UPDATE RESPONSE</string>
+
+=======
+    <string name="r_tv_createGigTitle">Create New Gig</string>
+    <string name="r_tv_createGig_title">Title</string>
+    <string name="r_et_crateGig_title">I do ....</string>
+    <string name="r_tv_crateGig_category">Category</string>
+    <string name="r_tv_crateGig_description">Description</string>
+    <string name="r_et_crateGig_description">Enter a description not more than 100 characters</string>
+    <string name="r_btn_createGig_create">Create Gig</string>
+>>>>>>> Stashed changes
     <string-array name="location_spinner">
         <item>Select a location</item>
         <item>Ampara</item>
@@ -91,6 +121,13 @@
         <item>Trincomalee</item>
         <item>Vavuniya</item>
     </string-array>
+
+    <string-array name="Role_spinner">
+        <item>I want to hire</item>
+        <item>I want to work</item>
+    </string-array>
+<<<<<<< Updated upstream
+
     <string-array name="p_makeResponse_category">
         <item>Mason</item>
         <item>Carpenter</item>
@@ -162,6 +199,17 @@
         <item>Ratnapura</item>
         <item>Trincomalee</item>
         <item>Vavuniya</item>
+=======
+    <string-array name="Gig_category">
+        <item>Plumber</item>
+        <item>Carpenter</item>
+        <item>Mason</item>
+        <item>Painter</item>
+        <item>Welding</item>
+        <item>Cleaners</item>
+        <item>Electricians</item>
+
+>>>>>>> Stashed changes
     </string-array>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
