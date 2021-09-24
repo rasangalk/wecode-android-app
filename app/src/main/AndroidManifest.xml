@@ -12,11 +12,11 @@
         <activity android:name=".p_edit_response"></activity>
         <activity android:name=".p_view_response" />
         <activity android:name=".p_view_request" />
-        <activity android:name=".p_make_response" />
+<!--        <activity android:name=".p_make_response" />-->
         <activity android:name=".loginActivity" />
         <activity android:name=".signupActivity" />
         <activity
-            android:name=".MainActivity"
+            android:name=".p_make_response"
             android:label="@string/app_name"
             android:theme="@style/Theme.Handymanandroidapp.NoActionBar">
             <intent-filter>
