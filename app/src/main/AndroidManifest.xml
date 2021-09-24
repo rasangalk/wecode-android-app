@@ -18,16 +18,16 @@
         <activity android:name=".p_view_response" />
         <activity android:name=".p_view_request" />
 <!--        <activity android:name=".p_make_response" />-->
-        <activity android:name=".loginActivity" />
+
 
 
         <activity android:name=".CreateGig"></activity>
-        <activity android:name=".GigsActivity" /> <!-- <activity android:name=".loginActivity"></activity> -->
-
+         <!-- <activity android:name=".loginActivity"></activity> -->
+        <activity  android:name=".p_make_response" />
         <activity android:name=".signupActivity" />
         <activity
 
-            android:name=".p_make_response"
+
 
             android:name=".loginActivity"
 
