@@ -13,10 +13,14 @@ import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 import org.jetbrains.annotations.NotNull;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -24,12 +28,12 @@ public class p_make_response extends AppCompatActivity implements AdapterView.On
     private static final String TAG = "p_make_response";
 
 
-//    private static final String KEY_CATEGORY= "category";
+    //    private static final String KEY_CATEGORY= "category";
     private static final String KEY_TITLE= "title";
     private static final String KEY_DESCRIPTION= "description";
 //    private static final String KEY_LOCATION= "location";
 
-//    private EditText editTextCategory;
+    //    private EditText editTextCategory;
     private EditText editTextTitle;
     private EditText editTextDescription;
 //    private EditText editTextLocation;
@@ -54,28 +58,26 @@ public class p_make_response extends AppCompatActivity implements AdapterView.On
 
     }
 
+    public String generateDate(){
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyMMdd.HHmmss");
+        double id = Double.parseDouble(String.valueOf(simpleDateFormat.format(Calendar.getInstance().getTime())));
+        return String.valueOf(id);
+    }
+
     public void saveNote(View v){
         String title = editTextTitle.getText().toString();
         String description = editTextDescription.getText().toString();
+
+        String userId= FirebaseAuth.getInstance().getCurrentUser().getUid();
+        DocumentReference documentReference=FirebaseFirestore.getInstance().collection("Users")
+                .document(userId).collection("RequestedServices").document(generateDate());
 
         Map<String, Object> note = new HashMap<>();
         note.put(KEY_TITLE,title);
         note.put(KEY_DESCRIPTION,description);
 
-        db.collection("Notebook").document("My first note").set(note)
-                .addOnSuccessListener(new OnSuccessListener<Void>() {
-                    @Override
-                    public void onSuccess(Void aVoid) {
-                        Toast.makeText(p_make_response.this,"Note saved",Toast.LENGTH_SHORT).show();
-                    }
-                })
-                .addOnFailureListener(new OnFailureListener() {
-                    @Override
-                    public void onFailure( @NotNull Exception e) {
-                        Toast.makeText(p_make_response.this,"Error !!",Toast.LENGTH_SHORT).show();
-                        Log.d(TAG,e.toString());
-                    }
-                });
+        documentReference.set(note);
+
     }
 
     @Override
