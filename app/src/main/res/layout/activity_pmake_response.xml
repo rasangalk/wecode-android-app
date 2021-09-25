@@ -47,15 +47,15 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-<!--                <Spinner-->
-<!--                    android:id="@+id/p_spn_makeResponse_category"-->
-<!--                    android:layout_width="196dp"-->
-<!--                    android:layout_height="37dp"-->
-<!--                    android:layout_marginStart="16dp"-->
-<!--                    android:layout_marginLeft="16dp"-->
-<!--                    android:layout_marginTop="7dp"-->
-<!--                    android:background="@drawable/rectt"-->
-<!--                    android:entries="@array/p_makeResponse_category"/>-->
+                <Spinner
+                    android:id="@+id/p_spn_makeResponse_category"
+                    android:layout_width="196dp"
+                    android:layout_height="37dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/rectt"
+                    android:entries="@array/p_makeResponse_category"/>
 
                 <TextView
                     android:id="@+id/p_tv_makeResponse_title"
@@ -130,15 +130,15 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-<!--                <Spinner-->
-<!--                    android:id="@+id/p_et_makeResponse_location"-->
-<!--                    android:layout_width="196dp"-->
-<!--                    android:layout_height="37dp"-->
-<!--                    android:layout_marginStart="16dp"-->
-<!--                    android:layout_marginLeft="16dp"-->
-<!--                    android:layout_marginTop="7dp"-->
-<!--                    android:background="@drawable/rectt"-->
-<!--                    android:entries="@array/p_makeResponse_location"/>-->
+                <Spinner
+                    android:id="@+id/p_et_makeResponse_location"
+                    android:layout_width="196dp"
+                    android:layout_height="37dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/rectt"
+                    android:entries="@array/p_makeResponse_location"/>
 
                 <Button
                     android:id="@+id/p_btn_makeResponse_btn"
