@@ -33,7 +33,7 @@ public class signupActivity extends AppCompatActivity implements AdapterView.OnI
 
 
     EditText editTextFirstName, editTextLastName, editTextEmail, editTextPhone, editTextPassword,
-                editTextRePassword;
+            editTextRePassword;
 
     Spinner spinnerLocation, spinnerRole;
 
@@ -101,7 +101,7 @@ public class signupActivity extends AppCompatActivity implements AdapterView.OnI
     }
 
     private void registerUser(){
-       final String FirstName    = editTextFirstName.getText().toString().trim();
+        final String FirstName    = editTextFirstName.getText().toString().trim();
         final String LastName     = editTextLastName.getText().toString().trim();
         final String Email        = editTextEmail.getText().toString().trim();
         final String Phone        = editTextPhone.getText().toString().trim();
@@ -142,13 +142,11 @@ public class signupActivity extends AppCompatActivity implements AdapterView.OnI
 
 
 
-
-
-            mAuth.createUserWithEmailAndPassword(Email, Password)
-                    .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                @Override
-                public void onComplete(@NonNull Task<AuthResult> task) {
-                    if(task.isSuccessful()){
+        mAuth.createUserWithEmailAndPassword(Email, Password)
+                .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        if(task.isSuccessful()){
                             User user = new User(
                                     FirstName,
                                     LastName,
@@ -157,14 +155,14 @@ public class signupActivity extends AppCompatActivity implements AdapterView.OnI
                                     Location,
                                     Role
                             );
-                        updateDatabase(user);
+                            updateDatabase(user);
 
+                        }
+                        else{
+                            Toast.makeText(signupActivity.this, task.getException().getMessage(),Toast.LENGTH_SHORT).show();
+                        }
                     }
-                    else{
-                        Toast.makeText(signupActivity.this, task.getException().getMessage(),Toast.LENGTH_SHORT).show();
-                    }
-                }
-            });
+                });
 
     }
 
@@ -174,7 +172,7 @@ public class signupActivity extends AppCompatActivity implements AdapterView.OnI
 
             String userId=FirebaseAuth.getInstance().getCurrentUser().getUid();
 
-            DocumentReference documentReference=FirebaseFirestore.getInstance().collection("Users").document(userId);
+            DocumentReference documentReference=FirebaseFirestore.getInstance().collection("NewUser").document(userId);
             HashMap<String,Object> hashMap=new HashMap<>();
             hashMap.put("FirstName",user.getFirstName());
             hashMap.put("LastName",user.getLastName());

@@ -66,6 +66,9 @@ public class loginActivity extends AppCompatActivity implements View.OnClickList
             public void onComplete(@NonNull @NotNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
                     checkRole();
+                    Intent intent = new Intent(loginActivity.this,p_update_response.class);
+                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    startActivity(intent);
                 }
                 else{
                     Toast.makeText(getApplicationContext(), task.getException().getMessage(), Toast.LENGTH_SHORT).show();
