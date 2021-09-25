@@ -13,6 +13,10 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 import org.jetbrains.annotations.NotNull;
 
@@ -61,7 +65,8 @@ public class loginActivity extends AppCompatActivity implements View.OnClickList
             @Override
             public void onComplete(@NonNull @NotNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
-                    Intent intent = new Intent(loginActivity.this, GigsActivity.class);
+                    checkRole();
+                    Intent intent = new Intent(loginActivity.this,p_update_response.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     startActivity(intent);
                 }
@@ -70,6 +75,24 @@ public class loginActivity extends AppCompatActivity implements View.OnClickList
                 }
             }
         });
+    }
+
+    private void checkRole() {
+
+        FirebaseFirestore firebaseFirestore=FirebaseFirestore.getInstance();
+        String userID=FirebaseAuth.getInstance().getCurrentUser().getUid();
+        DocumentReference documentReference=firebaseFirestore.collection("Users").document(userID);
+
+        documentReference.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
+            @Override
+            public void onComplete(@NonNull @NotNull Task<DocumentSnapshot> task) {
+
+            }
+        });
+
+        Intent intent = new Intent(loginActivity.this, CreateGig.class);
+        startActivity(intent);
+
     }
 
     @Override

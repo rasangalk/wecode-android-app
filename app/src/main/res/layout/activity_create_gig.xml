@@ -169,6 +169,7 @@
                         android:layout_marginBottom="10dp"
                         android:background="@drawable/fields"
                         android:fontFamily="sans-serif-black"
+                        android:onClick="saveGig"
                         android:text="@string/r_btn_createGig_create"
                         app:backgroundTint="@color/Orange" />
 

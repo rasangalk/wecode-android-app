@@ -12,7 +12,6 @@
     <string name="menu_slideshow">Slideshow</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="menu_categories">Categories</string>
     <string name="n_categories_title">Categories</string>
     <string name="n_category_image_desc">category_image</string>
@@ -53,6 +52,7 @@
     <string name="r_spin_signup_role">Role</string>
     <string name="r_tv_signup_role">Role</string>
 
+
     <string name="p_tv_makeResponse_category">Category</string>
     <string name="p_tv_makeResponse_title">Title</string>
     <string name="p_tv_makeResponse_description">Description</string>
@@ -82,6 +82,8 @@
     <string name="p_tv_editResponse_description">Description</string>
     <string name="p_tv_editResponse_location">Location</string>
     <string name="p_btn_editResponse_btn">UPDATE RESPONSE</string>
+
+
     <string name="n_btn_request_service">Request Service</string>
     <string name="n_request_services_title">Request Services</string>
     <string name="n_request_services_description">Description</string>
@@ -101,6 +103,8 @@
     <string name="n_view_gig_email_fill">nimal@gmail.com</string>
     <string name="n_view_gig_description">Description</string>
     <string name="n_view_gig_description_fill">This is the description</string>
+
+
     <string name="r_tv_createGigTitle">Create New Gig</string>
     <string name="r_tv_createGig_title">Title</string>
     <string name="r_et_crateGig_title">I do ....</string>
@@ -108,6 +112,12 @@
     <string name="r_tv_crateGig_description">Description</string>
     <string name="r_et_crateGig_description">Enter a description not more than 100 characters</string>
     <string name="r_btn_createGig_create">Create Gig</string>
+
+
+    <string name="r_tv_activeGigsTitle">Active Gigs</string>
+    <string name="r_btn_activeGigs_createNew">CREATE NEW</string>
+
+
     <string-array name="location_spinner">
         <item>Select a location</item>
         <item>Ampara</item>
@@ -141,6 +151,7 @@
         <item>I want to hire</item>
         <item>I want to work</item>
     </string-array>
+
 
     <string-array name="p_makeResponse_category">
         <item>Mason</item>
@@ -191,16 +202,16 @@
         <item>Select a location</item>
         <item>Ampara</item>
         <item>Anuradhapura</item>
-        <item>Badulla	</item>
+        <item>Badulla</item>
         <item>Batticaloa</item>
         <item>Colombo</item>
-        <item>Galle	</item>
+        <item>Galle</item>
         <item>Gampaha</item>
         <item>Hambantota</item>
         <item>Jaffna</item>
         <item>Kalutara</item>
         <item>Kandy</item>
-        <item>Kegalle	</item>
+        <item>Kegalle</item>
         <item>Kilinochchi</item>
         <item>Kurunegala</item>
         <item>Mannar</item>
@@ -216,6 +227,12 @@
         <item>Vavuniya</item>
     </string-array>
 
+    </string-array>
+
+
+    </string-array>
+
+
     <string-array name="Gig_category">
         <item>Plumber</item>
         <item>Carpenter</item>
@@ -225,6 +242,9 @@
         <item>Cleaners</item>
         <item>Electricians</item>
     </string-array>
+
+
+
 
     <string-array name="n_request_services_location">
         <item>Select a location</item>
@@ -255,6 +275,7 @@
         <item>Vavuniya</item>
     </string-array>
 
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="n_view_request_service_title">Request</string>
     <string name="n_view_request_service_description">Description</string>
@@ -269,5 +290,17 @@
     <string name="n_edit_request_location">Location</string>
     <string name="n_edit_request_scheduled_date">Scheduled Date</string>
     <string name="n_edit_request_edit_request_button">Edit request</string>
+
+
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="p_tv_update_response_topic">Edit Response</string>
+    <string name="p_tv_update_response_category">Category</string>
+    <string name="p_tv_update_response_title">Title</string>
+    <string name="p_tv_update_response_description">Description</string>
+    <string name="p_tv_update_response_location">Location</string>
+    <string name="p_btn_update_response_btn">UPDATE</string>
 
 </resources>
