@@ -116,6 +116,17 @@
 
     <string name="r_tv_activeGigsTitle">Active Gigs</string>
     <string name="r_btn_activeGigs_createNew">CREATE NEW</string>
+    <string name="r_tv_GigPreview">Gig Preview</string>
+    <string name="r_tv_GigPreview_title">Title</string>
+    <string name="r_tv_GigPreview_description">Description</string>
+    <string name="r_tv_GigPreview_category">Category</string>
+    <string name="r_tv_GigPreview_id">ID</string>
+    <string name="r_tv_GigPreview_location">Location</string>
+    <string name="r_btn_GigPreview_delete">DELETE</string>
+    <string name="r_btn_GigPreview_update">UPDATE</string>
+    <string name="r_tv_updateGig">Edit Gig</string>
+    <string name="r_tv_crateGig_location">Location</string>
+    <string name="r_btn_updateGig">UPDATE</string>
 
 
     <string-array name="location_spinner">
