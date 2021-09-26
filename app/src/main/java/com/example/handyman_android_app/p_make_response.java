@@ -26,10 +26,21 @@ import java.util.Map;
 
 public class p_make_response extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
     private static final String TAG = "p_make_response";
+
+
+
+
+    //    private static final String KEY_CATEGORY= "category";
+
+
     private static final String KEY_CATEGORY= "category";
+
     private static final String KEY_TITLE= "title";
     private static final String KEY_DESCRIPTION= "description";
     private static final String KEY_LOCATION= "location";
+
+
+    //    private EditText editTextCategory;
 
     private Spinner category_spinner;
     private EditText editTextTitle;
@@ -67,6 +78,10 @@ public class p_make_response extends AppCompatActivity implements AdapterView.On
         DocumentReference documentReference=FirebaseFirestore.getInstance().collection("Users")
                 .document(userId).collection("Responses").document(generateDate());
 
+        String userId= FirebaseAuth.getInstance().getCurrentUser().getUid();
+        DocumentReference documentReference=FirebaseFirestore.getInstance().collection("Users")
+                .document(userId).collection("RequestedServices").document(generateDate());
+
         Map<String, Object> note = new HashMap<>();
         note.put(KEY_TITLE,title);
         note.put(KEY_DESCRIPTION,description);
@@ -74,6 +89,10 @@ public class p_make_response extends AppCompatActivity implements AdapterView.On
         note.put(KEY_LOCATION,location);
 
         documentReference.set(note);
+
+
+        documentReference.set(note);
+
     }
 
     @Override
