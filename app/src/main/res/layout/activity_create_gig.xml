@@ -143,7 +143,7 @@
                         android:layout_marginLeft="16dp"
                         android:layout_marginTop="15dp"
                         android:fontFamily="sans-serif"
-                        android:text="@string/r_tv_crateGig_category"
+                        android:text="@string/r_tv_crateGig_location"
                         android:textColor="#FC6A20"
                         android:textSize="30sp" />
 

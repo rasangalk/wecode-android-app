@@ -9,17 +9,50 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Handymanandroidapp">
+<<<<<<< HEAD
+        <activity android:name=".r_updateGig"></activity>
+        <activity android:name=".r_activeGigPreview" />
+        <activity android:name=".TechnicialHome" /> <!-- <activity android:name=".loginActivity"></activity> -->
+        <activity android:name=".MainActivity" />
+=======
+
         <activity android:name=".TechnicialHome"></activity>
+
+
+        <activity android:name=".n_view_request_service"></activity>
+        <!-- <activity android:name=".n_view_gig"/> -->
+        <activity android:name=".n_request_services" />
+        <activity android:name=".p_edit_response" />
+
+
+        <activity android:name=".GigsActivity"></activity>
+
         <!-- <activity android:name=".loginActivity"></activity> -->
         <activity android:name=".MainActivity"/>
+>>>>>>> e625ec924b1ee9c922a33169da830a9970fa2250
         <activity android:name=".p_edit_response" />
         <activity android:name=".p_view_response" />
         <activity android:name=".p_view_request" />
+
         <activity android:name=".p_make_response" /> <!-- <activity android:name=".loginActivity" /> -->
         <activity android:name=".CreateGig" />
         <activity android:name=".GigsActivity" /> <!-- <activity android:name=".loginActivity"></activity> -->
+
+<!--        <activity android:name=".p_make_response" />-->
+        <activity android:name=".loginActivity" />
+
+
+        <activity android:name=".CreateGig"></activity>
+        <activity android:name=".GigsActivity" /> <!-- <activity android:name=".loginActivity"></activity> -->
+
+
         <activity android:name=".signupActivity" />
         <activity
+
+            android:name=".n_view_gig"
+
+            android:name=".p_make_response"
+
             android:name=".loginActivity"
             android:label="@string/app_name"
             android:theme="@style/Theme.Handymanandroidapp.NoActionBar">

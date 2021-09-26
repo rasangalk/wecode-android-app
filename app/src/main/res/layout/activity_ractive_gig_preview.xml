@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".r_activeGigPreview"
+    android:background="@color/blue">
+
+    <TextView
+        android:id="@+id/r_tv_GigPreview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="52dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/r_tv_GigPreview"
+        android:textColor="@color/white"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/r_constraintLayout5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/r_constraintLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="655dp"
+        android:background="@drawable/back_trans"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/r_tv_GigPreview_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="50dp"
+                    android:text="@string/r_tv_GigPreview_id"
+                    android:textColor="@color/Orange"
+                    android:textSize="35sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/r_tv_GigPreview_ID_Desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="10dp"
+                    android:text="78954"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/r_tv_GigPreview_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/r_tv_GigPreview_title"
+                    android:textColor="@color/Orange"
+                    android:textSize="35sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/r_tv_GigPreview_title_Desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="10dp"
+                    android:text="I do....."
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/r_tv_GigPreview_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/r_tv_GigPreview_category"
+                    android:textColor="@color/Orange"
+                    android:textSize="35sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/r_tv_GigPreview_category_Desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Mason"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/r_tv_GigPreview_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/r_tv_GigPreview_description"
+                    android:textColor="@color/Orange"
+                    android:textSize="35sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/r_tv_GigPreview_description_Desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Experienced painter and very cheap prices"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/r_tv_GigPreview_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/r_tv_GigPreview_location"
+                    android:textColor="@color/Orange"
+                    android:textSize="35sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/r_tv_GigPreview_location_Desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Badulla"
+                    android:textSize="25sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10sp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="10sp"
+                    android:layout_marginRight="10sp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/r_btn_GigPreview_update"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5sp"
+                        android:layout_marginRight="5sp"
+                        android:layout_weight="1"
+                        android:background="@drawable/fields"
+                        android:fontFamily="sans-serif-black"
+                        android:text="@string/r_btn_GigPreview_update"
+                        app:backgroundTint="@color/Orange"
+                       />
+
+                    <Button
+                        android:id="@+id/r_btn_GigPreview_delete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5sp"
+                        android:layout_marginLeft="5sp"
+                        android:layout_weight="1"
+                        android:background="@drawable/fields"
+                        android:fontFamily="sans-serif-black"
+                        android:onClick="deleteGig"
+                        android:text="@string/r_btn_GigPreview_delete"
+                        app:backgroundTint="@color/Orange" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
