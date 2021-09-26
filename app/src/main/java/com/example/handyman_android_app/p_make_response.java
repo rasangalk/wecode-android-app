@@ -26,8 +26,6 @@ import java.util.Map;
 
 public class p_make_response extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
     private static final String TAG = "p_make_response";
-
-
     private static final String KEY_CATEGORY= "category";
     private static final String KEY_TITLE= "title";
     private static final String KEY_DESCRIPTION= "description";
@@ -39,8 +37,6 @@ public class p_make_response extends AppCompatActivity implements AdapterView.On
     private Spinner location_spinner;
 
     private FirebaseFirestore db = FirebaseFirestore.getInstance();
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,13 +52,11 @@ public class p_make_response extends AppCompatActivity implements AdapterView.On
         editTextDescription = findViewById(R.id.p_et_makeResponse_description);
 
     }
-
     public String generateDate(){
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyMMdd.HHmmss");
         double id = Double.parseDouble(String.valueOf(simpleDateFormat.format(Calendar.getInstance().getTime())));
         return String.valueOf(id);
     }
-
     public void saveNote(View v){
         String title = editTextTitle.getText().toString();
         String description = editTextDescription.getText().toString();
@@ -80,7 +74,6 @@ public class p_make_response extends AppCompatActivity implements AdapterView.On
         note.put(KEY_LOCATION,location);
 
         documentReference.set(note);
-
     }
 
     @Override
