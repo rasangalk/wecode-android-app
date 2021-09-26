@@ -80,9 +80,9 @@ public class p_make_response extends AppCompatActivity implements AdapterView.On
         DocumentReference documentReference=FirebaseFirestore.getInstance().collection("Users")
                 .document(userId).collection("Responses").document(generateDate());
 
-        String userId= FirebaseAuth.getInstance().getCurrentUser().getUid();
-        DocumentReference documentReference=FirebaseFirestore.getInstance().collection("Users")
-                .document(userId).collection("RequestedServices").document(generateDate());
+//        String userId= FirebaseAuth.getInstance().getCurrentUser().getUid();
+//        DocumentReference documentReference=FirebaseFirestore.getInstance().collection("Users")
+//                .document(userId).collection("RequestedServices").document(generateDate());
 
         Map<String, Object> note = new HashMap<>();
         note.put(KEY_TITLE,title);

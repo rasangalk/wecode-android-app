@@ -96,7 +96,7 @@ public class p_view_response extends AppCompatActivity {
     private void openRequestServices() {
         Intent intent = new Intent(this, p_edit_response.class);
         startActivity(intent);
-
+    }
 
     public void deleteResponse(View view) {
         docRef.delete();
