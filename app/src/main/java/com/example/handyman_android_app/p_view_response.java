@@ -25,6 +25,8 @@ public class p_view_response extends AppCompatActivity {
     private static final String KEY_CATEGORY="category";
 
 
+
+
     private Button button;
 
     private TextView textViewDescription;
@@ -46,6 +48,14 @@ public class p_view_response extends AppCompatActivity {
         setContentView(R.layout.activity_pview_response);
 
 
+        button = (Button) findViewById(R.id.p_btn_viewResponse_updateBtn);
+        button.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                openResponseUpdate();
+            }
+        });
+
+
         button = (Button) findViewById(R.id.p_btn_editResponse_btn);
         button.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
@@ -59,6 +69,7 @@ public class p_view_response extends AppCompatActivity {
 //                openRequestServices();
 //            }
 //        });
+
 
 
         textViewDescription = findViewById(R.id.p_tv1_viewResponse_description);
@@ -102,8 +113,9 @@ public class p_view_response extends AppCompatActivity {
         docRef.delete();
 
     }
-//    private void openRequestServices() {
-//        Intent intent = new Intent(this, p_edit_response.class);
-//        startActivity(intent);
-//    }
+    private void openResponseUpdate() {
+        Intent intent = new Intent(this, p_update_response.class);
+        startActivity(intent);
+
+    }
 }
