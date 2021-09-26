@@ -66,7 +66,7 @@ public class loginActivity extends AppCompatActivity implements View.OnClickList
             public void onComplete(@NonNull @NotNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
                     checkRole();
-                    Intent intent = new Intent(loginActivity.this,p_update_response.class);
+                    Intent intent = new Intent(loginActivity.this,p_buyer_request_list.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     startActivity(intent);
                 }
@@ -90,7 +90,7 @@ public class loginActivity extends AppCompatActivity implements View.OnClickList
             }
         });
 
-        Intent intent = new Intent(loginActivity.this, CreateGig.class);
+        Intent intent = new Intent(loginActivity.this, test.class);
         startActivity(intent);
 
     }
