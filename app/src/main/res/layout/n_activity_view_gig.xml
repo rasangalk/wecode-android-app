@@ -8,14 +8,13 @@
         android:background="#002B57"
         tools:context=".n_view_gig">
 
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-medium"
             android:text="@string/n_view_gig_title"
             android:textColor="#FFFFFF"
-            android:textSize="35sp"
+            android:textSize="40sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
             app:layout_constraintEnd_toEndOf="parent"
