@@ -25,18 +25,19 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Title"
-                android:textSize="27sp"
                 android:textColor="@color/Orange"
-                android:textStyle="bold"/>
+                android:textSize="27sp"
+                android:textStyle="bold" />
+
             <TextView
+                android:id="@+id/r_tv_activeGigTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/r_tv_activeGigTitle"
                 android:layout_marginStart="5dp"
                 android:layout_marginLeft="8dp"
                 android:text="I do painting"
                 android:textColor="@color/white"
-                android:textSize="20sp"/>
+                android:textSize="20sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -48,27 +49,27 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Description"
-                android:textSize="27sp"
                 android:layout_marginTop="8dp"
+                android:text="Description"
                 android:textColor="@color/Orange"
-                android:textStyle="bold"/>
+                android:textSize="27sp"
+                android:textStyle="bold" />
+
             <TextView
+                android:id="@+id/r_tv_activeGigDescription"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/r_tv_activeGigDescription"
                 android:layout_marginStart="5dp"
-                android:layout_marginEnd="8dp"
                 android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
                 android:text="I do painting"
                 android:textColor="@color/white"
-                android:textSize="20sp"/>
+                android:textSize="20sp" />
         </LinearLayout>
 
 
     </LinearLayout>
-
 
 
 </androidx.cardview.widget.CardView>
