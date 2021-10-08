@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#002B57"
+    tools:context=".n_dashboard">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="601dp"
+        android:background="@drawable/back_trans"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/n_dashboard_findHandymen"
+        android:layout_width="380dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="50dp"
+        app:cardElevation="6dp"
+        app:cardCornerRadius="21dp"
+        app:cardBackgroundColor="#002b57"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:paddingTop="30dp"
+            android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/dashboard1" />
+
+        <TextView
+            android:layout_width="260dp"
+            android:layout_height="38dp"
+            android:fontFamily="sans-serif-medium"
+            android:layout_gravity="center_vertical"
+            android:text="Find handymen"
+            android:textColor="@color/white"
+            android:textSize="27sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/n_dashboard_gigs"
+        android:layout_width="380dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="30dp"
+        app:cardElevation="6dp"
+        app:cardCornerRadius="21dp"
+        app:cardBackgroundColor="#002b57"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/n_dashboard_findHandymen" >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:paddingTop="40dp"
+            android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/dashboard2" />
+
+        <TextView
+            android:layout_width="260dp"
+            android:layout_height="38dp"
+            android:fontFamily="sans-serif-medium"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="0dp"
+            android:text="Gigs"
+            android:textColor="@color/white"
+            android:textSize="27sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/n_dashboard_requests"
+        android:layout_width="380dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="30dp"
+        app:cardElevation="6dp"
+        app:cardCornerRadius="21dp"
+        app:cardBackgroundColor="#002b57"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/n_dashboard_gigs" >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:paddingTop="40dp"
+            android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/dashboard3" />
+
+        <TextView
+            android:layout_width="260dp"
+            android:layout_height="38dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Requested Services"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/white"
+            android:textSize="27sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

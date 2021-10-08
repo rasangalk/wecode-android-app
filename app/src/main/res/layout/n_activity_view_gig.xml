@@ -189,7 +189,7 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
-                        android:id="@+id/n_tv_view_gigg_description"
+                        android:id="@+id/n_tv_view_gig_description"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="7dp"

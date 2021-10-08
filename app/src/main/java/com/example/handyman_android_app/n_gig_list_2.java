@@ -1,4 +1,5 @@
-//package com.example.handyman_android_app.ui.slideshow;
+//package com.example.handyman_android_app;
+//
 //
 //import android.content.Context;
 //import android.os.Bundle;
@@ -12,26 +13,26 @@
 //import androidx.recyclerview.widget.LinearLayoutManager;
 //import androidx.recyclerview.widget.RecyclerView;
 //
-//import com.example.handyman_android_app.Adapters.n_gig_list_adapter;
-//import com.example.handyman_android_app.n_gig_list_model;
-//import com.example.handyman_android_app.R;
-//import com.example.handyman_android_app.databinding.FragmentSlideshowBinding;
+//import com.example.handyman_android_app.databinding.FragmentHomeBinding;
+//import com.example.handyman_android_app.ui.home.HomeViewModel;
 //import com.google.android.gms.tasks.OnCompleteListener;
 //import com.google.android.gms.tasks.Task;
 //import com.google.firebase.auth.FirebaseAuth;
+//import com.google.firebase.database.annotations.NotNull;
 //import com.google.firebase.firestore.CollectionReference;
 //import com.google.firebase.firestore.DocumentSnapshot;
 //import com.google.firebase.firestore.FirebaseFirestore;
 //import com.google.firebase.firestore.QuerySnapshot;
-//import org.jetbrains.annotations.NotNull;
+//
+//import com.example.handyman_android_app.Adapters.n_gig_list_adapter;
+//
 //import java.util.ArrayList;
-//import java.util.Objects;
 //
 //
-//public class SlideshowFragment extends Fragment {
+//public class n_gig_list_2 extends Fragment {
 //
-//    private SlideshowViewModel slideshowViewModel;
-//    private FragmentSlideshowBinding binding;
+//    private HomeViewModel homeViewModel;
+//    private FragmentHomeBinding binding;
 //    private RecyclerView recyclerView;
 //    private Context context;
 //    private ArrayList<n_gig_list_model> arrayList;
@@ -40,10 +41,13 @@
 //    public View onCreateView(@NonNull LayoutInflater inflater,
 //                             ViewGroup container, Bundle savedInstanceState) {
 //
-//        slideshowViewModel = new ViewModelProvider(this).get(SlideshowViewModel.class);
 //
-//        binding = FragmentSlideshowBinding.inflate(inflater, container, false);
+//
+//        homeViewModel = new ViewModelProvider(this).get(HomeViewModel.class);
+//
+//        binding = FragmentHomeBinding.inflate(inflater, container, false);
 //        View root = binding.getRoot();
+//
 //
 //        context=getContext();
 //        arrayList=new ArrayList<>();
@@ -51,17 +55,16 @@
 //        recyclerView=root.findViewById(R.id.userList);
 //        recyclerView.setLayoutManager(new LinearLayoutManager(context));
 //
-//        CollectionReference collectionReference = FirebaseFirestore.getInstance().collection("Users").document(Objects.requireNonNull(FirebaseAuth.getInstance().getCurrentUser()).getUid()).collection("Gigs");
+//        CollectionReference collectionReference = FirebaseFirestore.getInstance().collection("Users").document(FirebaseAuth.getInstance().getCurrentUser().getUid()).collection("Gigs");
 //        collectionReference.get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
-//           @Override
+//            @Override
 //            public void onComplete(@NonNull @NotNull Task<QuerySnapshot> task) {
 //
 //                if (task.isSuccessful() && task.getResult()!=null){
 //
 //                    for (DocumentSnapshot data:task.getResult()){
 //
-//                        n_gig_list_model n_gig_list = new n_gig_list_model(
-//                                data.getDouble("GigID"),
+//                        n_gig_list_model n_gig_list = new n_gig_list_model(data.getDouble("GigID"),
 //                                data.getString("category"),
 //                                data.getString("description"),
 //                                data.getString("location"),
@@ -78,6 +81,8 @@
 //
 //        return root;
 //    }
+//
+//
 //
 //    @Override
 //    public void onDestroyView() {

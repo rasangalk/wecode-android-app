@@ -50,13 +50,13 @@ public class loginActivity extends AppCompatActivity implements View.OnClickList
 
 
         if(Email.isEmpty()){
-            editTextEmail.setError("Email require");
+            editTextEmail.setError("Email required");
             editTextEmail.requestFocus();
             return;
         }
 
         if(Password.isEmpty()){
-            editTextPassword.setError("First name require");
+            editTextPassword.setError("First name required");
             editTextPassword.requestFocus();
             return;
         }
@@ -91,9 +91,8 @@ public class loginActivity extends AppCompatActivity implements View.OnClickList
             }
         });
 
-        Intent intent = new Intent(loginActivity.this, test.class);
+        Intent intent = new Intent(loginActivity.this, Calculator.class);
         startActivity(intent);
-
     }
 
     @Override

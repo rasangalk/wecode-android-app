@@ -1,23 +1,23 @@
 package com.example.handyman_android_app;
 
 public class p_User {
-    String customer, title ,location;
+    String title ,location, category;
 
 
     public p_User(){}
 
-    public p_User(String customer, String title, String location) {
-        this.customer = customer;
+    public p_User(String category, String title, String location) {
+        this.category = category;
         this.title = title;
         this.location = location;
     }
 
-    public String getCustomer() {
-        return customer;
+    public String getCategory() {
+        return category;
     }
 
-    public void setCustomer(String customer) {
-        this.customer = customer;
+    public void setCategory(String category) {
+        this.category = category;
     }
 
     public String getTitle() {

@@ -83,13 +83,12 @@
     <string name="p_tv_editResponse_location">Location</string>
     <string name="p_btn_editResponse_btn">UPDATE RESPONSE</string>
 
-
     <string name="n_btn_request_service">Request Service</string>
     <string name="n_request_services_title">Request Services</string>
     <string name="n_request_services_description">Description</string>
     <string name="n_request_services_location">Location</string>
     <string name="n_request_services_description_hint">I need to construct a wall urgently</string>
-    <string name="n_request_services_date_hint">2020/10/10</string>
+    <string name="n_request_services_date_hint">21.09.2021</string>
     <string name="n_request_service_scheduled_date">Scheduled Date</string>
     <string name="n_view_gig_title">View Gig</string>
     <string name="n_view_gig_category">Category</string>
@@ -103,7 +102,6 @@
     <string name="n_view_gig_email_fill">nimal@gmail.com</string>
     <string name="n_view_gig_description">Description</string>
     <string name="n_view_gig_description_fill">This is the description</string>
-
 
     <string name="r_tv_createGigTitle">Create New Gig</string>
     <string name="r_tv_createGig_title">Title</string>
@@ -154,7 +152,7 @@
 
 
     <string-array name="p_makeResponse_category">
-<!--        <item>Select Category</item>-->
+        <!--<item>Select Category</item>-->
         <item>Mason</item>
         <item>Carpenter</item>
         <item>Electrician</item>
@@ -162,8 +160,9 @@
         <item>Contractor</item>
         <item>Painter</item>
     </string-array>
+
     <string-array name="p_makeResponse_location">
-<!--        <item>Select a location</item>-->
+        <!--<item>Select a location</item>-->
         <item>Kalutara</item>
         <item>Ampara</item>
         <item>Anuradhapura</item>
@@ -288,7 +287,6 @@
 
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 
     <string name="p_tv_update_response_topic">Edit Response</string>
     <string name="p_tv_update_response_category">Category</string>
@@ -299,6 +297,15 @@
     <string name="calculator_title">Title</string>
 
     <string name="p_tv_responces_topic">Responces</string>
+    <string name="title_activity_nview_category">n_view_category</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 
 
 </resources>

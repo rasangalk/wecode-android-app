@@ -8,36 +8,51 @@
     <fragment
         android:id="@+id/nav_home"
         android:name="com.example.handyman_android_app.ui.home.HomeFragment"
-        android:label="@string/menu_home"
+        android:label=""
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/nav_gallery"
         android:name="com.example.handyman_android_app.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
+        android:label=""
         tools:layout="@layout/fragment_gallery" />
 
     <fragment
         android:id="@+id/nav_slideshow"
         android:name="com.example.handyman_android_app.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
+        android:label=""
         tools:layout="@layout/fragment_slideshow" />
 
+<!--    <fragment-->
+
+<!--        android:id="@+id/nav_buyerRequsts"-->
+<!--        android:name="com.example.handyman_android_app.p_buyer_requests"-->
+<!--        android:label="Buyer Requests"-->
+<!--        tools:layout="@layout/fragment_p_buyer_requests" />-->
+
     <fragment
-
-        android:id="@+id/nav_buyerRequsts"
-        android:name="com.example.handyman_android_app.p_buyer_requests"
-        android:label="Buyer Requests"
-        tools:layout="@layout/fragment_p_buyer_requests" />
-
         android:id="@+id/nav_category"
         android:name="com.example.handyman_android_app.n_categories"
-        android:label="Categories"
+        android:label=""
         tools:layout="@layout/n_fragment_categories"/>
 
     <fragment
-        android:id="@+id/r_nav_activeGigs"
-        android:name="com.example.handyman_android_app.ActiveGigs"
-        android:label="ActiveGigs"
-        tools:layout="@layout/fragment_active_gigs"/>
+        android:id="@+id/nav_request_list"
+        android:name="com.example.handyman_android_app.n_view_requested_services_list"
+        android:label=""
+        tools:layout="@layout/fragment_n_view_requested_services_list"/>
+
+<!--    <fragment-->
+<!--        android:id="@+id/r_nav_activeGigs"-->
+<!--        android:name="com.example.handyman_android_app.ActiveGigs"-->
+<!--        android:label="ActiveGigs"-->
+<!--        tools:layout="@layout/fragment_active_gigs"/>-->
+
+<!--   <fragment-->
+<!--       android:id="@+id/n_nav_view_gigs"-->
+<!--       android:name="com.example.handyman_android_app.n_gig_list_2"-->
+<!--       android:label="Gig List"-->
+<!--       tools:layout="@layout/fragment_n_gig_list"/>-->
+
+
 </navigation>

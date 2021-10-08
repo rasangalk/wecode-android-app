@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:layout_rowWeight="1"
+    android:layout_columnWeight="1"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginRight="8dp"
+    app:cardBackgroundColor="#002b57"
+    app:cardCornerRadius="21dp"
+    app:cardElevation="6dp">
+
+<GridLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="1"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:rowCount="3">
+
+    <TextView
+        android:id="@+id/n_tv_request_list_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="25/10/2020"
+        android:textColor="@color/Orange"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/n_tv_request_list_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-medium"
+        android:lines="1"
+        android:text="I need to paint my house on next week. I'm looking for a "
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+
+</GridLayout>
+</androidx.cardview.widget.CardView>

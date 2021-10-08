@@ -9,6 +9,7 @@ import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.SpinnerAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -32,21 +33,25 @@ public class n_edit_request_service extends AppCompatActivity implements Adapter
 
     String userId= FirebaseAuth.getInstance().getCurrentUser().getUid();
     private FirebaseFirestore db = FirebaseFirestore.getInstance();
-
-    DocumentReference docRef=FirebaseFirestore.getInstance().collection("Users")
-            .document(userId).collection("RequestedServices").document("210925.164441");
+    DocumentReference docRef;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.n_activity_edit_request_service);
 
-        Spinner n_edit_request_services_spinner = findViewById(R.id.n_edit_request_services_spinner);
-        n_edit_request_services_spinner.setOnItemSelectedListener(this);
+        Spinner spinnerLocation = findViewById(R.id.n_edit_request_services_spinner);
+        spinnerLocation.setOnItemSelectedListener(this);
+
+        Intent intent=getIntent();
+        String OrderID = intent.getStringExtra("RequestID");
 
         textViewDescription = findViewById(R.id.n_et_edit_request_description);
-    //    textViewLocation = findViewById(R.id.n_edit_request_services_spinner);
+        textViewLocation = findViewById(R.id.n_edit_request_services_spinner);
         textViewDate = findViewById(R.id.n_et_edit_request_services_date);
+
+        docRef=FirebaseFirestore.getInstance()
+                .collection("RequestedServices").document(OrderID);
 
         docRef.get()
                 .addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
@@ -54,12 +59,15 @@ public class n_edit_request_service extends AppCompatActivity implements Adapter
                     public void onSuccess(DocumentSnapshot documentSnapshot) {
                         if(documentSnapshot.exists()){
                             String description = documentSnapshot.getString(KEY_DESCRIPTION);
-               //             String location = documentSnapshot.getString(KEY_LOCATION);
+                            String location = (KEY_LOCATION);
                             String date = documentSnapshot.getString(KEY_DATE);
 
+
                             textViewDescription.setText(description);
-                          //  textViewLocation.setOnItemSelectedListener(getSelectedItem(location).toString());
+                            spinnerLocation.setOnItemSelectedListener(null);
                             textViewDate.setText(date);
+
+                            Toast.makeText(n_edit_request_service.this, "Updated successfully",Toast.LENGTH_SHORT).show();
                         }else {
                             Toast.makeText(n_edit_request_service.this, "Document does not exist",Toast.LENGTH_SHORT).show();
                         }
@@ -85,8 +93,14 @@ public class n_edit_request_service extends AppCompatActivity implements Adapter
     public void updateRequestedServices(View view) {
         String description = textViewDescription.getText().toString();
         String date = textViewDate.getText().toString();
+        String location = textViewLocation.getSelectedItem().toString();
 
         docRef.update(KEY_DESCRIPTION,description);
+        docRef.update(KEY_LOCATION,location);
         docRef.update(KEY_DATE,date);
+
+        Intent intent = new Intent(this, n_view_request_service.class);
+        startActivity(intent);
+
     }
 }
