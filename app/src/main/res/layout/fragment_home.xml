@@ -33,7 +33,11 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
+
+            android:layout_marginTop="130dp"
+
             android:layout_marginTop="25dp"
+
             android:background="@drawable/fields"
             android:fontFamily="sans-serif-black"
             android:text="@string/r_btn_activeGigs_createNew"

@@ -10,10 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Handymanandroidapp">
 
+
+        <activity android:name=".p_done_response"></activity>
+
 <!--        <activity android:name=".Calculator"></activity>-->
         <activity android:name=".n_view_gig_list" />
         <activity android:name=".TechnicialHome" />
         <activity android:name=".n_edit_request_service" />
+
 
         <activity android:name=".p_buyer_request_list" />
         <activity android:name=".TechnicialHome" />

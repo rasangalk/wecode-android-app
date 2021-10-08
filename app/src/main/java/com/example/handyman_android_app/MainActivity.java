@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
                 R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow,R.id.nav_category,
 
 
-                R.id.nav_buyerRequsts,R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow, R.id.nav_category,R.id.nav_category, R.id.r_nav_activeGigs,R.id.nav_buyerRequsts,R.id.nav_category)
+                R.id.nav_gallery,R.id.nav_buyerRequsts,R.id.nav_home, R.id.nav_slideshow, R.id.nav_category,R.id.nav_category, R.id.r_nav_activeGigs,R.id.nav_buyerRequsts,R.id.nav_category)
 
 
                 .setDrawerLayout(drawer)

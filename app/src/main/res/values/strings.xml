@@ -11,7 +11,6 @@
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="menu_categories">Categories</string>
     <string name="n_categories_title">Categories</string>
     <string name="n_category_image_desc">category_image</string>
@@ -165,7 +164,11 @@
 
 
     <string-array name="p_makeResponse_category">
+
+        <item>Select Category</item>
+
 <!--        <item>Select Category</item>-->
+
         <item>Mason</item>
         <item>Carpenter</item>
         <item>Electrician</item>
@@ -174,7 +177,11 @@
         <item>Painter</item>
     </string-array>
     <string-array name="p_makeResponse_location">
+
+        <item>Select a location</item>
+
 <!--        <item>Select a location</item>-->
+
         <item>Kalutara</item>
         <item>Ampara</item>
         <item>Anuradhapura</item>
@@ -211,7 +218,7 @@
     </string-array>
 
     <string-array name="p_editResponse_location">
-        <item>Select a location</item>
+        <item>Kalutara</item>
         <item>Ampara</item>
         <item>Anuradhapura</item>
         <item>Badulla</item>
@@ -221,7 +228,6 @@
         <item>Gampaha</item>
         <item>Hambantota</item>
         <item>Jaffna</item>
-        <item>Kalutara</item>
         <item>Kandy</item>
         <item>Kegalle</item>
         <item>Kilinochchi</item>
@@ -239,6 +245,14 @@
         <item>Vavuniya</item>
     </string-array>
 
+
+
+
+    </string-array>
+
+
+
+
     <string-array name="Gig_category">
         <item>Plumber</item>
         <item>Carpenter</item>
@@ -248,6 +262,7 @@
         <item>Cleaners</item>
         <item>Electricians</item>
     </string-array>
+
 
     <string-array name="n_request_services_location">
         <item>Select a location</item>
@@ -279,6 +294,10 @@
     </string-array>
 
 
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
@@ -301,6 +320,7 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
+
     <string name="p_tv_update_response_topic">Edit Response</string>
     <string name="p_tv_update_response_category">Category</string>
     <string name="p_tv_update_response_title">Title</string>
@@ -310,6 +330,11 @@
     <string name="calculator_title">Title</string>
 
     <string name="p_tv_responces_topic">Responces</string>
+
+
+
+    <string name="p_tv_responces_topic">Responces</string>
+
 
 
 </resources>
