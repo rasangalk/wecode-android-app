@@ -11,7 +11,6 @@
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="menu_categories">Categories</string>
     <string name="n_categories_title">Categories</string>
     <string name="n_category_image_desc">category_image</string>
@@ -114,6 +113,17 @@
 
     <string name="r_tv_activeGigsTitle">Active Gigs</string>
     <string name="r_btn_activeGigs_createNew">CREATE NEW</string>
+    <string name="r_tv_GigPreview">Gig Preview</string>
+    <string name="r_tv_GigPreview_title">Title</string>
+    <string name="r_tv_GigPreview_description">Description</string>
+    <string name="r_tv_GigPreview_category">Category</string>
+    <string name="r_tv_GigPreview_id">ID</string>
+    <string name="r_tv_GigPreview_location">Location</string>
+    <string name="r_btn_GigPreview_delete">DELETE</string>
+    <string name="r_btn_GigPreview_update">UPDATE</string>
+    <string name="r_tv_updateGig">Edit Gig</string>
+    <string name="r_tv_crateGig_location">Location</string>
+    <string name="r_btn_updateGig">UPDATE</string>
 
 
     <string-array name="location_spinner">
@@ -152,7 +162,9 @@
 
 
     <string-array name="p_makeResponse_category">
-        <!--<item>Select Category</item>-->
+
+        <item>Select Category</item>
+
         <item>Mason</item>
         <item>Carpenter</item>
         <item>Electrician</item>
@@ -163,6 +175,9 @@
 
     <string-array name="p_makeResponse_location">
         <!--<item>Select a location</item>-->
+
+        <item>Select a location</item>
+
         <item>Kalutara</item>
         <item>Ampara</item>
         <item>Anuradhapura</item>
@@ -199,7 +214,7 @@
     </string-array>
 
     <string-array name="p_editResponse_location">
-        <item>Select a location</item>
+        <item>Kalutara</item>
         <item>Ampara</item>
         <item>Anuradhapura</item>
         <item>Badulla</item>
@@ -209,7 +224,6 @@
         <item>Gampaha</item>
         <item>Hambantota</item>
         <item>Jaffna</item>
-        <item>Kalutara</item>
         <item>Kandy</item>
         <item>Kegalle</item>
         <item>Kilinochchi</item>
@@ -227,6 +241,14 @@
         <item>Vavuniya</item>
     </string-array>
 
+
+
+
+    </string-array>
+
+
+
+
     <string-array name="Gig_category">
         <item>Plumber</item>
         <item>Carpenter</item>
@@ -236,6 +258,7 @@
         <item>Cleaners</item>
         <item>Electricians</item>
     </string-array>
+
 
     <string-array name="n_request_services_location">
         <item>Select a location</item>
@@ -267,6 +290,10 @@
     </string-array>
 
 
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
@@ -288,6 +315,7 @@
 
     <!-- TODO: Remove or change this placeholder text -->
 
+
     <string name="p_tv_update_response_topic">Edit Response</string>
     <string name="p_tv_update_response_category">Category</string>
     <string name="p_tv_update_response_title">Title</string>
@@ -306,6 +334,11 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+
+
+    <string name="p_tv_responces_topic">Responces</string>
+
 
 
 </resources>
