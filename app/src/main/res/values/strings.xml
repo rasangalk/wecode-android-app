@@ -115,6 +115,17 @@
 
     <string name="r_tv_activeGigsTitle">Active Gigs</string>
     <string name="r_btn_activeGigs_createNew">CREATE NEW</string>
+    <string name="r_tv_GigPreview">Gig Preview</string>
+    <string name="r_tv_GigPreview_title">Title</string>
+    <string name="r_tv_GigPreview_description">Description</string>
+    <string name="r_tv_GigPreview_category">Category</string>
+    <string name="r_tv_GigPreview_id">ID</string>
+    <string name="r_tv_GigPreview_location">Location</string>
+    <string name="r_btn_GigPreview_delete">DELETE</string>
+    <string name="r_btn_GigPreview_update">UPDATE</string>
+    <string name="r_tv_updateGig">Edit Gig</string>
+    <string name="r_tv_crateGig_location">Location</string>
+    <string name="r_btn_updateGig">UPDATE</string>
 
 
     <string-array name="location_spinner">
@@ -236,7 +247,9 @@
 
 
 
+
     </string-array>
+
 
 
 
@@ -249,8 +262,6 @@
         <item>Cleaners</item>
         <item>Electricians</item>
     </string-array>
-
-
 
 
     <string-array name="n_request_services_location">
@@ -306,7 +317,6 @@
     <string name="n_edit_request_edit_request_button">Edit request</string>
 
 
-    </string-array>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
@@ -317,6 +327,7 @@
     <string name="p_tv_update_response_description">Description</string>
     <string name="p_tv_update_response_location">Location</string>
     <string name="p_btn_update_response_btn">UPDATE</string>
+    <string name="calculator_title">Title</string>
 
     <string name="p_tv_responces_topic">Responces</string>
 

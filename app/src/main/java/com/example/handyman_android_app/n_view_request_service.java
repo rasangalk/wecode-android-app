@@ -75,7 +75,9 @@ public class n_view_request_service extends AppCompatActivity{
                     }
                 });
 
-
+    }
+    public void deleteRequestedServices(View v) {
+        docRef.delete();
     }
 
     private void openRequestServices() {
@@ -83,7 +85,5 @@ public class n_view_request_service extends AppCompatActivity{
         startActivity(intent);
     }
 
-    public void deleteRequestedServices(View v) {
-        docRef.delete();
-    }
+
 }

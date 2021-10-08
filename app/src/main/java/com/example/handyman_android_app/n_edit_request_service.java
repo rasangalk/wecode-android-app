@@ -40,12 +40,12 @@ public class n_edit_request_service extends AppCompatActivity implements Adapter
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.n_activity_edit_request_service);
-//
-//        Spinner n_edit_request_services_spinner = findViewById(R.id.n_edit_request_services_spinner);
-//        n_edit_request_services_spinner.setOnItemSelectedListener(this);
+
+        Spinner n_edit_request_services_spinner = findViewById(R.id.n_edit_request_services_spinner);
+        n_edit_request_services_spinner.setOnItemSelectedListener(this);
 
         textViewDescription = findViewById(R.id.n_et_edit_request_description);
-       // textViewLocation = findViewById(R.id.n_edit_request_services_spinner);
+    //    textViewLocation = findViewById(R.id.n_edit_request_services_spinner);
         textViewDate = findViewById(R.id.n_et_edit_request_services_date);
 
         docRef.get()
@@ -81,7 +81,6 @@ public class n_edit_request_service extends AppCompatActivity implements Adapter
     public void onNothingSelected(AdapterView<?> adapterView) {
 
     }
-
 
     public void updateRequestedServices(View view) {
         String description = textViewDescription.getText().toString();

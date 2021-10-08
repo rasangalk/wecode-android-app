@@ -10,9 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Handymanandroidapp">
 
+
         <activity android:name=".p_done_response"></activity>
+
+<!--        <activity android:name=".Calculator"></activity>-->
+        <activity android:name=".n_view_gig_list" />
+        <activity android:name=".TechnicialHome" />
+        <activity android:name=".n_edit_request_service" />
+
+
         <activity android:name=".p_buyer_request_list" />
         <activity android:name=".TechnicialHome" />
+
         <activity android:name=".n_view_request_service" /> <!-- <activity android:name=".n_view_gig"/> -->
         <activity android:name=".n_request_services" />
         <activity android:name=".p_edit_response" />
@@ -39,6 +48,7 @@
         <!-- <activity android:name=".p_make_response" /> -->
         <!-- <activity android:name=".signupActivity" /> -->
         <activity
+
             android:name=".loginActivity"
             android:label="@string/app_name"
             android:theme="@style/Theme.Handymanandroidapp.NoActionBar">
