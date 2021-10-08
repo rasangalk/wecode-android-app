@@ -9,19 +9,9 @@
             android:icon="@drawable/ic_menu_camera"
             android:title="@string/menu_home" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="@string/menu_gallery" />
-        <item
             android:id="@+id/nav_slideshow"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="@string/menu_slideshow" />
-
-
-        <item
-            android:id="@+id/nav_buyerRequsts"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="BuyerRequests" />
 
         <item
             android:id="@+id/nav_category"
@@ -33,5 +23,17 @@
             android:id="@+id/r_nav_activeGigs"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="Active Gigs" />
+
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Responses" />
+
+        <item
+            android:id="@+id/nav_buyerRequsts"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Buyer Requests" />
+
+
     </group>
 </menu>
