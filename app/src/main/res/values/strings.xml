@@ -153,7 +153,11 @@
 
 
     <string-array name="p_makeResponse_category">
+
         <item>Select Category</item>
+
+<!--        <item>Select Category</item>-->
+
         <item>Mason</item>
         <item>Carpenter</item>
         <item>Electrician</item>
@@ -162,7 +166,11 @@
         <item>Painter</item>
     </string-array>
     <string-array name="p_makeResponse_location">
+
         <item>Select a location</item>
+
+<!--        <item>Select a location</item>-->
+
         <item>Kalutara</item>
         <item>Ampara</item>
         <item>Anuradhapura</item>
@@ -197,6 +205,7 @@
         <item>Contractor</item>
         <item>Painter</item>
     </string-array>
+
     <string-array name="p_editResponse_location">
         <item>Kalutara</item>
         <item>Ampara</item>
@@ -223,8 +232,12 @@
         <item>Ratnapura</item>
         <item>Trincomalee</item>
         <item>Vavuniya</item>
+    </string-array>
+
+
 
     </string-array>
+
 
 
     <string-array name="Gig_category">
@@ -236,6 +249,8 @@
         <item>Cleaners</item>
         <item>Electricians</item>
     </string-array>
+
+
 
 
     <string-array name="n_request_services_location">
@@ -268,14 +283,47 @@
     </string-array>
 
 
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="n_view_request_service_title">Request</string>
+    <string name="n_view_request_service_description">Description</string>
+    <string name="n_view_request_service_description_hint">I need to construct a wall urgently</string>
+    <string name="n_view_request_service_location">Location</string>
+    <string name="n_view_request_service_scheduled_date">Scheduled Date</string>
+    <string name="n_view_request_service_delete">delete</string>
+    <string name="n_view_request_service_update">edit</string>
+    <string name="n_edit_request_service_title">Edit Request</string>
+    <string name="n_edit_request_description">Description</string>
+    <string name="n_edit_request_hint">I need to construct a wall urgently</string>
+    <string name="n_edit_request_location">Location</string>
+    <string name="n_edit_request_scheduled_date">Scheduled Date</string>
+    <string name="n_edit_request_edit_request_button">Edit request</string>
+
+
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
     <string name="p_tv_update_response_topic">Edit Response</string>
     <string name="p_tv_update_response_category">Category</string>
     <string name="p_tv_update_response_title">Title</string>
     <string name="p_tv_update_response_description">Description</string>
     <string name="p_tv_update_response_location">Location</string>
     <string name="p_btn_update_response_btn">UPDATE</string>
+
     <string name="p_tv_responces_topic">Responces</string>
+
+
+
+    <string name="p_tv_responces_topic">Responces</string>
+
+
 
 </resources>

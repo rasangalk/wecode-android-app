@@ -31,6 +31,16 @@ public class p_make_response extends AppCompatActivity implements AdapterView.On
     public EditText cusNameTV;
     String customerName;
 
+
+
+
+
+    //    private static final String KEY_CATEGORY= "category";
+
+
+    private static final String KEY_CATEGORY= "category";
+
+
     private static final String KEY_TITLE= "title";
     private static final String KEY_CATEGORY= "category";
     private static final String KEY_DESCRIPTION= "description";
@@ -39,14 +49,15 @@ public class p_make_response extends AppCompatActivity implements AdapterView.On
     private static final String KEY_CUS_NAME= "customerName";
 
 
+
+    
+
     private Spinner category_spinner;
     private EditText editTextTitle;
     private EditText editTextDescription;
     private Spinner location_spinner;
 
     private FirebaseFirestore db = FirebaseFirestore.getInstance();
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -73,18 +84,26 @@ public class p_make_response extends AppCompatActivity implements AdapterView.On
     }
 
     public double generateDate(){
+
+    public String generateDate(){
+
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyMMdd.HHmmss");
         double id = Double.parseDouble(String.valueOf(simpleDateFormat.format(Calendar.getInstance().getTime())));
 
         return id;
     }
 
+
     public void saveNote(View v ){
+
+    public void saveNote(View v){
+
         String title = editTextTitle.getText().toString();
         String description = editTextDescription.getText().toString();
         String customerName = cusNameTV.getText().toString();
         String category = category_spinner.getSelectedItem().toString();
         String location = location_spinner.getSelectedItem().toString();
+
         double ResponseID = generateDate();
 
         if(title.isEmpty()){
@@ -119,6 +138,28 @@ public class p_make_response extends AppCompatActivity implements AdapterView.On
             finish();
 
         }
+
+
+        String userId= FirebaseAuth.getInstance().getCurrentUser().getUid();
+        DocumentReference documentReference=FirebaseFirestore.getInstance().collection("Users")
+                .document(userId).collection("Responses").document(generateDate());
+
+        String userId= FirebaseAuth.getInstance().getCurrentUser().getUid();
+        DocumentReference documentReference=FirebaseFirestore.getInstance().collection("Users")
+                .document(userId).collection("RequestedServices").document(generateDate());
+
+        Map<String, Object> note = new HashMap<>();
+        note.put(KEY_TITLE,title);
+        note.put(KEY_DESCRIPTION,description);
+        note.put(KEY_CATEGORY,category);
+        note.put(KEY_LOCATION,location);
+
+        documentReference.set(note);
+
+
+        documentReference.set(note);
+
+
     }
     @Override
     public void onItemSelected(AdapterView<?> adapterView, View view, int position, long id) {

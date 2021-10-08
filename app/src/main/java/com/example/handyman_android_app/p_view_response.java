@@ -25,7 +25,14 @@ import static com.example.handyman_android_app.ui.gallery.GalleryFragment.arrayL
 import static com.example.handyman_android_app.ui.gallery.GalleryFragment.gigAdapter;
 
 
+
 public class p_view_response  extends AppCompatActivity {
+
+
+
+
+    private Button button;
+
 
     public double responseID;
     String category,description,title, location,ResponseID,customerName;
@@ -84,16 +91,35 @@ public class p_view_response  extends AppCompatActivity {
         });
     }
 
-//    public void deleteResponse(View v){
-//        FirebaseFirestore db = FirebaseFirestore.getInstance();
-//        String userId= FirebaseAuth.getInstance().getCurrentUser().getUid();
-//        DocumentReference responseRef = db.document("Users/"+userId+"/Responses/"+responseID);
-//        responseRef.delete();
-////        Intent i = new Intent(this, GalleryFragment.class);
-////        startActivity(i);
-//    }
+
 
     public void deleteResponse(View v){
+
+
+        button = (Button) findViewById(R.id.p_btn_viewResponse_updateBtn);
+        button.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                openResponseUpdate();
+            }
+        });
+
+
+        button = (Button) findViewById(R.id.p_btn_editResponse_btn);
+        button.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                openRequestServices();
+            }
+        });
+
+
+
+
+
+        textViewDescription = findViewById(R.id.p_tv1_viewResponse_description);
+        textViewLocation = findViewById(R.id.p_tv1_viewResponse_location);
+        textViewTitle = findViewById(R.id.p_tv1_viewResponse_title);
+        textViewCategory = findViewById(R.id.p_tv1_viewResponse_category);
+
 
         AlertDialog alertDialog = new AlertDialog.Builder(this)
                 .setIcon(android.R.drawable.ic_menu_delete)
@@ -127,7 +153,7 @@ public class p_view_response  extends AppCompatActivity {
                         });
                     }
                 })
-//set negative button
+
                 .setNegativeButton("No", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
@@ -137,6 +163,21 @@ public class p_view_response  extends AppCompatActivity {
                 })
                 .show();
 
+
+
+
+    private void openRequestServices() {
+        Intent intent = new Intent(this, p_edit_response.class);
+        startActivity(intent);
+
+
+    public void deleteResponse(View view) {
+        docRef.delete();
+
+    }
+    private void openResponseUpdate() {
+        Intent intent = new Intent(this, p_update_response.class);
+        startActivity(intent);
 
 
     }

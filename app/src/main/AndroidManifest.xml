@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Handymanandroidapp">
+
         <activity android:name=".p_done_response"></activity>
+        <activity android:name=".p_buyer_request_list" />
         <activity android:name=".TechnicialHome" />
         <activity android:name=".n_view_request_service" /> <!-- <activity android:name=".n_view_gig"/> -->
         <activity android:name=".n_request_services" />
