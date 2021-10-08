@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginBottom="52dp"
+        android:layout_marginBottom="30dp"
         android:fontFamily="sans-serif"
         android:text="@string/r_tv_GigPreview"
         android:textColor="@color/white"
@@ -25,19 +25,22 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/r_constraintLayout5"
         android:layout_width="match_parent"
-        android:layout_height="655dp"
+        android:layout_height="610dp"
         android:background="@drawable/back_trans"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="600dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical" >
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/r_tv_GigPreview_id"
@@ -169,8 +172,7 @@
                         android:background="@drawable/fields"
                         android:fontFamily="sans-serif-black"
                         android:text="@string/r_btn_GigPreview_update"
-                        app:backgroundTint="@color/Orange"
-                       />
+                        app:backgroundTint="@color/Orange" />
 
                     <Button
                         android:id="@+id/r_btn_GigPreview_delete"
